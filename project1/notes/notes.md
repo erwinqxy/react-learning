@@ -22,3 +22,31 @@ to tell it HOW to do each step.
 5. What does it mean for something to be "composable"?
 We have small pieces that we can put together to make something
 larger/greater than the individual pieces.
+
+
+6. What is a React component?
+A function that returns React elements. (UI)
+
+7. What's wrong with this code?
+```
+function MyComponent() {
+    return (
+        <small>I'm tiny text!</small>
+    )
+}
+```
+
+8. What's wrong with this code?
+```
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
+
+ReactDOM.render(<Header />, document.getElementById("root"))
+```
