@@ -17,7 +17,7 @@ $ yarn watch # npm run watch
 # Final Result 
 ![Final](./progress/3-final.png)
 
-#Resource: 
+# Resource: 
 - Scrimba
 - [Figma Design](https://www.figma.com/file/xA1rJVQOorqMW6xjGdBLcI/ReactFacts?node-id=0%3A1)
 
