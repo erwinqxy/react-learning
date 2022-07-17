@@ -15,7 +15,7 @@ $ yarn watch # npm run watch
 ```
 
 # Final Result 
-[Final](./progress/3-final.png)
+![Final](./progress/3-final.png)
 
 #Resource: 
 - Scrimba
