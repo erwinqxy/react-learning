@@ -1,4 +1,75 @@
-html, body {
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
+    font-family: Inter, sans-serif;
+    background-color: #282D35;
+
+}
+
+.nav-logo {
+    width: 40px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 90px; 
+    padding: 30px 25px; 
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    font-size: 22 px;
+    font-weight: 700;
+}
+
+.logo-text {
+    color:61DAFB;
+    margin-right: auto;
+
+}
+
+.nav-items > li {
     padding: 10px;
+    color: DEEBF8;
+    font-weight: 600
+}
+
+main {
+    padding: 60px 27px;
+    color: white; 
+    background-image: URL("./images/react-icon-large.png");
+    background-repeat: no-repeat;
+    background-position: right 75%;
+}
+
+.main-title {
+    margin: 0; 
+    font-size: 39px
+}
+
+.facts {
+    margin-top: 20px;
+
+}
+
+.facts > li {
+    line-height: 19px;
+    padding-block: 5px;
+}
+
+.facts > li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB
+}
+
+.footer {
+    color: white; 
+    text-align: center;
 }

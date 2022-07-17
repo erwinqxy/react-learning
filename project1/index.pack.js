@@ -444,64 +444,32 @@ var _reactDom = __webpack_require__(4);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _Nav = __webpack_require__(20);
+
+var _Nav2 = _interopRequireDefault(_Nav);
+
+var _Footer = __webpack_require__(18);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+var _MainContent = __webpack_require__(19);
+
+var _MainContent2 = _interopRequireDefault(_MainContent);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/*
-Challenge: Starting from scratch, build and render the 
-HTML for our section project. Check the Google slide for 
-what you're trying to build.
+// dont have to specify .js cause default
+function App() {
+    return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(_Nav2.default, null),
+        _react2.default.createElement(_MainContent2.default, null),
+        _react2.default.createElement(_Footer2.default, null)
+    );
+}
 
-We'll be adding styling to it later.
-
-Hints:
-* The React logo is a file in the project tree, so you can
-  access it by using `src="./react-logo.png" in your image
-  element
-* You can also set the `width` attribute of the image element
-  just like in HTML. In the slide, I have it set to 40px
- */
-
-var page = _react2.default.createElement(
-  "div",
-  null,
-  _react2.default.createElement("img", { src: "./react-logo.png", width: "40" }),
-  _react2.default.createElement(
-    "h1",
-    null,
-    "Fun facts about React"
-  ),
-  _react2.default.createElement(
-    "ul",
-    null,
-    _react2.default.createElement(
-      "li",
-      null,
-      "Was first released in 2013"
-    ),
-    _react2.default.createElement(
-      "li",
-      null,
-      "Was originally created by Jordan Walke"
-    ),
-    _react2.default.createElement(
-      "li",
-      null,
-      "Has well over 100K stars on GitHub"
-    ),
-    _react2.default.createElement(
-      "li",
-      null,
-      "Is maintained by Facebook"
-    ),
-    _react2.default.createElement(
-      "li",
-      null,
-      "Powers thousands of enterprise apps, including mobile apps"
-    )
-  )
-);
-
-_reactDom2.default.render(page, document.getElementById("root"));
+_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("root"));
 
 /***/ }),
 /* 6 */
@@ -30514,6 +30482,168 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Footer() {
+    return _react2.default.createElement(
+        "footer",
+        { className: "footer" },
+        _react2.default.createElement(
+            "small",
+            null,
+            "\xA9 2022 erwinqxy. All rights reserved."
+        )
+    );
+}
+
+exports.default = Footer;
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = MainContent;
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MainContent() {
+    return _react2.default.createElement(
+        "main",
+        { className: "container" },
+        _react2.default.createElement(
+            "h1",
+            { className: "main-title" },
+            "Fun facts about React"
+        ),
+        _react2.default.createElement(
+            "ul",
+            { className: "facts" },
+            _react2.default.createElement(
+                "li",
+                null,
+                "Was first released in 2013."
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                "Was originally created by Jordan Walke"
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                "Has well over 100K stars on GitHub"
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                "Is mainted by Facebook"
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                "Powers thousands of enterprsie apps, including mobile apps"
+            )
+        ),
+        _react2.default.createElement(
+            "h1",
+            null,
+            "Reasons I'm excited to learn React"
+        ),
+        _react2.default.createElement(
+            "ul",
+            { className: "facts" },
+            _react2.default.createElement(
+                "li",
+                null,
+                "It's a popular library."
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                "I would like to brush up on my frontend skills!!"
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                "I think react is pretty cool!"
+            )
+        )
+    );
+}
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = Nav;
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// need to export the file to allow import 
+function Nav() {
+    return _react2.default.createElement(
+        "header",
+        null,
+        _react2.default.createElement(
+            "nav",
+            { className: "nav" },
+            _react2.default.createElement("img", { src: "./images/react-logo.png", className: "nav-logo" }),
+            _react2.default.createElement(
+                "h3",
+                { className: "logo-text" },
+                "ReactFacts"
+            ),
+            _react2.default.createElement(
+                "ul",
+                { className: "nav-items" },
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "React Course - Project 1"
+                )
+            )
+        )
+    );
+}
 
 /***/ })
 /******/ ]);
