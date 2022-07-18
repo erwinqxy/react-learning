@@ -100,3 +100,5 @@ that can be displayed on the page.
    manually by typing them out?
 It makes our code more "self-sustaining" - not requiring
 additional changes whenever the data changes.
+
+READ: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals
