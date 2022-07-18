@@ -438,7 +438,8 @@ function App() {
             reviewCount: item.stats.reviewCount,
             location: item.location,
             title: item.title,
-            price: item.price
+            price: item.price,
+            openSpots: item.openSpots
         });
     });
 
@@ -30636,9 +30637,21 @@ Notes:
 */
 
 function Card(prop) {
+    var badgeText = void 0;
+    if (prop.openSpots === 0) {
+        badgeText = "SOLD OUT";
+    } else if (prop.location === "Online") {
+        badgeText = "ONLINE";
+    }
+
     return _react2.default.createElement(
         "div",
-        { className: "Card" },
+        { className: "card" },
+        badgeText && _react2.default.createElement(
+            "div",
+            { className: "card--badge" },
+            badgeText
+        ),
         _react2.default.createElement("img", { src: "././images/" + prop.img, className: "card-pic" }),
         _react2.default.createElement(
             "div",
