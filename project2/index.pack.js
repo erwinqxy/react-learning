@@ -432,6 +432,7 @@ still be block elements, stacked vertically. We'll add styling later.
 function App() {
     var cards = _data2.default.map(function (item) {
         return _react2.default.createElement(_Card2.default, {
+            key: item.id,
             img: item.coverImg,
             rating: item.stats.rating,
             reviewCount: item.stats.reviewCount,
@@ -446,7 +447,11 @@ function App() {
         null,
         _react2.default.createElement(_Navbar2.default, null),
         _react2.default.createElement(_Hero2.default, null),
-        cards
+        _react2.default.createElement(
+            "section",
+            { className: "cards-list" },
+            cards
+        )
     );
 }
 
@@ -30655,19 +30660,19 @@ function Card(prop) {
                 "span",
                 { className: "gray" },
                 " ",
-                prop.country,
+                prop.location,
                 " "
             )
         ),
         _react2.default.createElement(
             "p",
-            null,
+            { className: "card--title" },
             prop.title,
             " "
         ),
         _react2.default.createElement(
             "p",
-            null,
+            { className: "card--price" },
             _react2.default.createElement(
                 "span",
                 { className: "bold" },

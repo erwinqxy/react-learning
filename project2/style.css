@@ -54,6 +54,9 @@ section {
 .card {
   width: 175px;
   font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
 }
 
 .card-pic {
@@ -76,4 +79,20 @@ section {
 
 .bold {
   font-weight: bold;
+}
+
+.card--price {
+  margin-top: auto;
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
